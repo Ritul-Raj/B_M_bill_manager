@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Expense Tracker App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+Expense Tracker App is a React application built with Redux to help users manage their monthly bills efficiently. The application allows users to add, edit, remove, and filter bills while also providing a time-series chart of their monthly billing cycle. Additionally, it includes a feature to highlight the minimum number of bills that must be paid without exceeding a given budget.
 
-## Available Scripts
+## Features
+### Level 1:
+- **Manage Bills**: Users can manually add, edit, and remove bills, with all changes reflected in the application state.
+- **Filter Bills**: Users can filter bills by category using a dropdown filter.
+- **Time-Series Chart**: Displays a graphical representation of the monthly billing cycle.
 
-In the project directory, you can run:
+### Level 2:
+- **Budget Constraint**: Highlights the minimum number of bills that should be paid while ensuring the total does not exceed a predefined monthly budget.
 
-### `npm start`
+## Deployment
+The application is live at:
+[Expense Tracker App](https://expenseetrackerapp.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation & Setup
+### Prerequisites:
+- Node.js and npm/yarn installed
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Steps:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Ritul-Raj/B_M_bill_manager.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd B_M_bill_manager
+   ```
+3. Install dependencies:
+   ```bash
+   npm install  # or yarn install
+   ```
+4. Start the development server:
+   ```bash
+   npm start  # or yarn start
+   ```
+5. Open `http://localhost:3000/` in your browser.
 
-### `npm test`
+## Usage
+- **Adding a Bill**: Click the 'Add Bill' button, fill in the details, and submit.
+- **Editing a Bill**: Click the edit icon on a bill, modify the details, and save.
+- **Deleting a Bill**: Click the delete icon on a bill.
+- **Filtering**: Use the category dropdown to filter bills.
+- **Viewing Chart**: The time-series chart updates automatically based on bill data.
+- **Budget Optimization**: Enter a budget value, and the system will highlight the minimum bills that need to be paid.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
+- **Frontend**: React, Redux, React Router, Redux Thunk
+- **State Management**: Redux
+- **Charts**: Chart.js or similar library
 
-### `npm run build`
+## Sample Bills Data Format
+```json
+{
+  "bills": [
+    { "id": 1, "description": "Dominoes", "category": "Food & Dining", "amount": "430", "date": "01-02-2020" },
+    { "id": 2, "description": "Car wash", "category": "Utility", "amount": "500", "date": "01-06-2020" },
+    { "id": 3, "description": "Amazon", "category": "Shopping", "amount": "2030", "date": "01-07-2020" }
+  ]
+}
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributing
+1. Fork the repository.
+2. Create a new branch (`feature-branch-name`).
+3. Make your changes and commit them.
+4. Push to your fork and submit a pull request.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## License
+This project is open-source and available under the MIT License.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contact
+For any issues or suggestions, feel free to raise an issue in the repository or contact me via GitHub.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Notes
+- Ensure you have Redux DevTools installed for easier debugging.
+- The project can be extended by integrating a backend for persistent storage.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
