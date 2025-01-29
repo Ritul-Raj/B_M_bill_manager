@@ -1,0 +1,40 @@
+
+.HeaderContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000000;
+    padding: 15px 10px;
+    border: 2px solid #000000;
+    /* border-radius: 10px; */
+}
+
+.CategorySelector select, .MonthSelector select {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 550;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    color: black;
+    outline: none;
+    margin: 5px;
+}
+
+.ActionButtons button {
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.ActionButtons button:hover {
+    background-color: #002244;
+    transform: scale(1.1);
+}

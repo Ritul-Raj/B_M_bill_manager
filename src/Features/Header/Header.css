@@ -1,0 +1,12 @@
+.headeringg{
+    background-color:white;
+    color: black;;
+    height: fit-content;
+    text-align: center;
+}
+
+.headeringg h1{
+    margin: 0;
+    padding: 0.5em;
+
+}

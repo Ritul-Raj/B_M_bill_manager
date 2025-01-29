@@ -1,0 +1,26 @@
+
+  
+
+  .popup-container {
+    padding: 2.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background-color: #f9f9fb;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #003366;
+}
+
+.popup-form input {
+    margin: 0.8em 0;
+    border: 2px solid #003366;
+    border-radius: 8px;
+    height: 2em;
+
+    padding: 0 1em;
+    font-size: 1em;
+    background-color: #ffffff;
+}

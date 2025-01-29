@@ -1,0 +1,67 @@
+
+
+.TableHeader, .RowContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ensures 4 equal columns */
+    align-items: center; /* Align content vertically */
+    text-align: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.TableHeader {
+    background-color: #003366;
+    color: #f4f4f9;
+}
+
+.TableHeader h2, .RowContainer h2 {
+    margin: 0;
+    font-size: 1.2em;
+    text-align: center;
+    color: #f4f4f9;
+}
+
+.RowContainer {
+    background-color: #000000;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+.ButtonContainer {
+    display: flex;
+    gap: 4px;
+  
+    
+}
+
+.EditButton, .DeleteButton {
+    cursor: pointer;
+    padding: 5px 8px; /* Compact size */
+    font-size: 0.9em;
+    border: none;
+    background-color: #0066cc;
+    color: #ffffff;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    width: 60px;
+    margin: 0; /* Remove extra margin */
+}
+
+.EditButton:hover, .DeleteButton:hover {
+    background-color: #004999;
+    transform: scale(1.05);
+}
+
+
+
+hr {
+    margin: 0;
+    border: none;
+    background-color: #003366;
+    height: 3px;
+    width: 100%;
+}
+
+
+
+
