@@ -47,11 +47,11 @@ function Footer({ total, pageData }) {
   return (
     <div className="footer-container">
       <div className="total-section">
-        <h3>Total: </h3>
+        <h3>Total:</h3>
         <h3> {total}</h3>
       </div>
       <div className="budget-section">
-        <p>Budget:🤵‍♂️</p>
+        <p>Budget💸</p>
         <div className="input-container">
           <TextInput
             label=""
@@ -70,18 +70,16 @@ function Footer({ total, pageData }) {
           </button>
         </div>
         {displayBills && (
-          <div className="result-container">
-            <h3>{"\u00A0"} Min.No.Of Bills: </h3>
-            <p>{optimizedBills.count}</p>
-            <h3> Bills Amount: </h3>
-            {optimizedBills.selectedBills.map((amount, index) => (
-              <p className="total-section" key={`${amount}_${index}`}>
-                {amount}
-                {", "}
-              </p>
-            ))}
-          </div>
-        )}
+  <div className="result-container">
+    <h3>{"\u00A0"} Min Bill Count: </h3>
+    <p>{optimizedBills.count}</p>
+    <h3> Bills Amount: </h3>
+    <p className="total-section">
+      {optimizedBills.selectedBills.join(", ")}
+    </p>
+  </div>
+)}
+
       </div>
     </div>
   );

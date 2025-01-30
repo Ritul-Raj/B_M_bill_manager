@@ -3,7 +3,7 @@ function Header() {
   return (
     <>
       <div className="headeringg">
-        <h1>Expense Tracker Hub</h1>
+        <h1>Expense Tracker Hub📈</h1>
       </div>
     </>
   );
